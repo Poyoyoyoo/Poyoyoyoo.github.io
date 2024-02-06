@@ -88,70 +88,27 @@
             z-index: -1; /* Ensure images are behind other content */
         }
 
-        /* Overlapping images */
-        img:nth-child(1) {
-            top: 50%;
-            left: calc(10% - 75px); /* Adjusted left position */
-            transform: translate(-50%, -50%);
-            z-index: 1; /* Adjusted z-index */
+        /* Checkers pattern positioning for the images */
+        img:nth-child(odd) {
+            top: calc(50% - 150px); /* Adjusted top position */
+            left: calc(25% - 75px); /* Adjusted left position */
         }
 
-        img:nth-child(2) {
-            top: 50%;
-            left: calc(20% - 75px); /* Adjusted left position */
-            transform: translate(-50%, -50%);
-            z-index: 2; /* Adjusted z-index */
+        img:nth-child(even) {
+            top: calc(50% + 50px); /* Adjusted top position */
+            left: calc(25% - 75px); /* Adjusted left position */
         }
 
-        img:nth-child(3) {
-            top: 50%;
-            left: calc(30% - 75px); /* Adjusted left position */
-            transform: translate(-50%, -50%);
-            z-index: 3; /* Adjusted z-index */
-        }
-
-        /* Second set of images */
-        img:nth-child(4) {
-            top: 50%;
+        img:nth-child(3n + 1) {
             left: calc(50% - 75px); /* Adjusted left position */
-            transform: translate(-50%, -50%);
-            z-index: 1; /* Adjusted z-index */
         }
 
-        img:nth-child(5) {
-            top: 50%;
-            left: calc(60% - 75px); /* Adjusted left position */
-            transform: translate(-50%, -50%);
-            z-index: 2; /* Adjusted z-index */
+        img:nth-child(3n + 2) {
+            left: calc(75% - 75px); /* Adjusted left position */
         }
 
-        img:nth-child(6) {
-            top: 50%;
-            left: calc(70% - 75px); /* Adjusted left position */
-            transform: translate(-50%, -50%);
-            z-index: 3; /* Adjusted z-index */
-        }
-
-        /* Third set of images */
-        img:nth-child(7) {
-            top: 50%;
-            left: calc(90% - 75px); /* Adjusted left position */
-            transform: translate(-50%, -50%);
-            z-index: 1; /* Adjusted z-index */
-        }
-
-        img:nth-child(8) {
-            top: 50%;
+        img:nth-child(3n + 3) {
             left: calc(100% - 75px); /* Adjusted left position */
-            transform: translate(-50%, -50%);
-            z-index: 2; /* Adjusted z-index */
-        }
-
-        img:nth-child(9) {
-            top: 50%;
-            left: calc(110% - 75px); /* Adjusted left position */
-            transform: translate(-50%, -50%);
-            z-index: 3; /* Adjusted z-index */
         }
     </style>
 </head>
