@@ -87,23 +87,26 @@
             z-index: -1; /* Ensure images are behind other content */
         }
 
-        /* Adjusted positioning to make images touch each other */
+        /* Overlapping images */
         img:nth-child(1) {
             top: 50%;
             left: 10%;
             transform: translate(-50%, -50%);
+            z-index: 1; /* Adjusted z-index */
         }
 
         img:nth-child(2) {
             top: 50%;
-            left: 50%;
+            left: 20%; /* Adjusted left position */
             transform: translate(-50%, -50%);
+            z-index: 2; /* Adjusted z-index */
         }
 
         img:nth-child(3) {
             top: 50%;
-            left: 90%;
+            left: 30%; /* Adjusted left position */
             transform: translate(-50%, -50%);
+            z-index: 3; /* Adjusted z-index */
         }
     </style>
 </head>
@@ -135,10 +138,4 @@
         </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 PLPoyo LLC. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+    <!-- Footer
