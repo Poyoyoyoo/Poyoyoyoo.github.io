@@ -133,6 +133,32 @@
             top: 400px;
             left: 400px;
         }
+
+        /* Additional images */
+        /* Use a loop to generate the HTML for each set of 15 images */
+        /* Cheetah images */
+        {% for i in range(1, 16) %}
+        img:nth-child({{ i + 9 }}) {
+            top: {{ (i - 1) % 5 * 200 }}px;
+            left: {{ Math.floor((i - 1) / 5) * 200 + 600 }}px;
+        }
+        {% endfor %}
+
+        /* Flag images */
+        {% for i in range(1, 16) %}
+        img:nth-child({{ i + 24 }}) {
+            top: {{ (i - 1) % 5 * 200 }}px;
+            left: {{ Math.floor((i - 1) / 5) * 200 + 1000 }}px;
+        }
+        {% endfor %}
+
+        /* Grape images */
+        {% for i in range(1, 16) %}
+        img:nth-child({{ i + 39 }}) {
+            top: {{ (i - 1) % 5 * 200 }}px;
+            left: {{ Math.floor((i - 1) / 5) * 200 + 1400 }}px;
+        }
+        {% endfor %}
     </style>
 </head>
 <body>
@@ -161,6 +187,21 @@
     <img src="https://i.imgur.com/URYYep3.png" alt="Flag">
     <!-- Image 9: Grapes -->
     <img src="https://i.imgur.com/aQCsdDr.png" alt="Grapes">
+
+    <!-- Additional Cheetah images -->
+    {% for i in range(1, 16) %}
+    <img src="https://i.imgur.com/xbGV2DK.png" alt="Cheetah">
+    {% endfor %}
+
+    <!-- Additional Flag images -->
+    {% for i in range(1, 16) %}
+    <img src="https://i.imgur.com/URYYep3.png" alt="Flag">
+    {% endfor %}
+
+    <!-- Additional Grape images -->
+    {% for i in range(1, 16) %}
+    <img src="https://i.imgur.com/aQCsdDr.png" alt="Grapes">
+    {% endfor %}
 
     <!-- Main Content Section -->
     <main>
