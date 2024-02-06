@@ -1,2 +1,99 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool & Elaborate HTML Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #282c35;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        .feature-box {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .feature-box img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cool & Elaborate HTML Page</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <div class="feature-box">
+            <img src="https://via.placeholder.com/400" alt="Feature 1">
+            <h2>Feature 1</h2>
+            <p>This is a cool feature description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="feature-box">
+            <img src="https://via.placeholder.com/400" alt="Feature 2">
+            <h2>Feature 2</h2>
+            <p>Another awesome feature description. Proin vel quam non tortor aliquam fermentum euismod ut augue.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cool & Elaborate HTML Page</p>
+    </footer>
+</body>
+</html>
