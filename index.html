@@ -27,15 +27,36 @@
         }
 
         header {
-            background-color: #333333;
+            background-color: #ff4d4d; /* Bright red background color */
             color: #ffffff;
             padding: 20px;
             text-align: center;
+            position: relative; /* Position relative for pseudo-elements */
         }
 
         header h1 {
             margin: 0;
             font-size: 2em;
+        }
+
+        /* Create decorative lines using pseudo-elements */
+        header::before,
+        header::after {
+            content: '';
+            position: absolute;
+            background-color: #ffffff;
+            height: 2px;
+            width: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        header::before {
+            left: 0;
+        }
+
+        header::after {
+            right: 0;
         }
 
         main {
@@ -54,11 +75,13 @@
             text-decoration: none;
             font-size: 1.2em;
             border-radius: 10px; /* Increased border radius */
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+            box-shadow: 0px 0px 20px 5px rgba(76, 175, 80, 0.6); /* Added box-shadow for glowy effect */
         }
 
         .download-button:hover {
             background-color: #45a049;
+            box-shadow: 0px 0px 20px 10px rgba(76, 175, 80, 0.8); /* Adjusted box-shadow for glow on hover */
         }
 
         /* Bright font color for the title */
@@ -67,7 +90,7 @@
         }
 
         footer {
-            background-color: #333333;
+            background-color: #ff4d4d; /* Same color as header */
             color: #ffffff;
             text-align: center;
             padding: 10px;
