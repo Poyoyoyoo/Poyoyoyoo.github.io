@@ -25,12 +25,6 @@
             box-sizing: border-box;
             color: #333; /* Set default font color */
             position: relative; /* Ensure relative positioning for absolute positioning of images */
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f8f8f8;
         }
 
         header {
@@ -38,9 +32,6 @@
             color: #ffffff;
             padding: 20px;
             text-align: center;
-            width: 100%;
-            box-sizing: border-box;
-            order: 1;
         }
 
         header h1 {
@@ -49,11 +40,8 @@
         }
 
         main {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            justify-content: center;
-            order: 2;
+            padding: 40px;
+            position: relative;
         }
 
         section {
@@ -87,24 +75,64 @@
             color: #ffffff;
             text-align: center;
             padding: 10px;
+            position: fixed;
+            bottom: 0;
             width: 100%;
-            box-sizing: border-box;
-            order: 3;
         }
 
         /* Positioning and sizing for the images */
         img {
             width: 150px; /* Adjusted width */
             height: auto;
-            margin: 0; /* Remove default margin */
-            order: 2;
+            position: absolute;
+            z-index: -1; /* Ensure images are behind other content */
         }
 
-        /* Chessboard pattern positioning for the images */
-        img:nth-child(odd) {
-            background-color: #222;
+        /* Grid formation with slightly touching images */
+        img:nth-child(1) {
+            top: 0;
+            left: 0;
         }
 
+        img:nth-child(2) {
+            top: 0;
+            left: 200px;
+        }
+
+        img:nth-child(3) {
+            top: 0;
+            left: 400px;
+        }
+
+        img:nth-child(4) {
+            top: 200px;
+            left: 0;
+        }
+
+        img:nth-child(5) {
+            top: 200px;
+            left: 200px;
+        }
+
+        img:nth-child(6) {
+            top: 200px;
+            left: 400px;
+        }
+
+        img:nth-child(7) {
+            top: 400px;
+            left: 0;
+        }
+
+        img:nth-child(8) {
+            top: 400px;
+            left: 200px;
+        }
+
+        img:nth-child(9) {
+            top: 400px;
+            left: 400px;
+        }
     </style>
 </head>
 <body>
@@ -114,26 +142,35 @@
         <h1>Simple Card Trader Game</h1>
     </header>
 
+    <!-- Images Section -->
+    <!-- Image 1: Cheetah -->
+    <img src="https://i.imgur.com/xbGV2DK.png" alt="Cheetah">
+    <!-- Image 2: Flag -->
+    <img src="https://i.imgur.com/URYYep3.png" alt="Flag">
+    <!-- Image 3: Grapes -->
+    <img src="https://i.imgur.com/aQCsdDr.png" alt="Grapes">
+    <!-- Image 4: Cheetah -->
+    <img src="https://i.imgur.com/xbGV2DK.png" alt="Cheetah">
+    <!-- Image 5: Flag -->
+    <img src="https://i.imgur.com/URYYep3.png" alt="Flag">
+    <!-- Image 6: Grapes -->
+    <img src="https://i.imgur.com/aQCsdDr.png" alt="Grapes">
+    <!-- Image 7: Cheetah -->
+    <img src="https://i.imgur.com/xbGV2DK.png" alt="Cheetah">
+    <!-- Image 8: Flag -->
+    <img src="https://i.imgur.com/URYYep3.png" alt="Flag">
+    <!-- Image 9: Grapes -->
+    <img src="https://i.imgur.com/aQCsdDr.png" alt="Grapes">
+
     <!-- Main Content Section -->
     <main>
-        <!-- Image 1: Cheetah -->
-        <img src="https://i.imgur.com/xbGV2DK.png" alt="Cheetah">
-        <!-- Image 2: Flag -->
-        <img src="https://i.imgur.com/URYYep3.png" alt="Flag">
-        <!-- Image 3: Grapes -->
-        <img src="https://i.imgur.com/aQCsdDr.png" alt="Grapes">
-        <!-- Image 4: Cheetah -->
-        <img src="https://i.imgur.com/xbGV2DK.png" alt="Cheetah">
-        <!-- Image 5: Flag -->
-        <img src="https://i.imgur.com/URYYep3.png" alt="Flag">
-        <!-- Image 6: Grapes -->
-        <img src="https://i.imgur.com/aQCsdDr.png" alt="Grapes">
-        <!-- Image 7: Cheetah -->
-        <img src="https://i.imgur.com/xbGV2DK.png" alt="Cheetah">
-        <!-- Image 8: Flag -->
-        <img src="https://i.imgur.com/URYYep3.png" alt="Flag">
-        <!-- Image 9: Grapes -->
-        <img src="https://i.imgur.com/aQCsdDr.png" alt="Grapes">
+        <section id="content">
+            <h2 class="section-title">Download Here</h2> <!-- Updated section title -->
+            <p>Click here to start your journey.</p> <!-- Updated text -->
+            
+            <!-- Download Button -->
+            <a href="path/to/your/download/file.zip" class="download-button" download>Download Now</a>
+        </section>
     </main>
 
     <!-- Footer Section -->
