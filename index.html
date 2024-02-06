@@ -24,6 +24,7 @@
             padding: 0;
             box-sizing: border-box;
             color: #333; /* Set default font color */
+            position: relative; /* Ensure relative positioning for absolute positioning of images */
         }
 
         header {
@@ -31,12 +32,51 @@
             color: #ffffff;
             padding: 20px;
             text-align: center;
-            position: relative; /* Ensure relative positioning for absolute positioning of images */
         }
 
         header h1 {
             margin: 0;
             font-size: 2em;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 15px 30px; /* Increased padding */
+            background-color: #4CAF50;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 10px; /* Increased border radius */
+            transition: background-color 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+            box-shadow: 0px 0px 20px 5px rgba(76, 175, 80, 0.6); /* Added box-shadow for glowy effect */
+        }
+
+        .download-button:hover {
+            background-color: #45a049;
+            box-shadow: 0px 0px 20px 10px rgba(76, 175, 80, 0.8); /* Adjusted box-shadow for glow on hover */
+        }
+
+        /* Bright font color for the title */
+        .section-title {
+            color: #ff6600;
+        }
+
+        footer {
+            background-color: #981e32; /* Imperial Red background color */
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
         /* Positioning and sizing for the images */
@@ -47,7 +87,7 @@
             z-index: -1; /* Ensure images are behind other content */
         }
 
-        /* Adjusted positioning to place images within the header */
+        /* Adjusted positioning to make images touch each other */
         img:nth-child(1) {
             top: 50%;
             left: 10%;
@@ -71,19 +111,18 @@
 
     <!-- Hero Section -->
     <header>
-        <!-- Images Section within Header -->
-        <!-- Image 1: Cheetah -->
-        <img src="https://i.imgur.com/2wsnls2.png" alt="Cheetah">
-        
-        <!-- Image 2: Flag -->
-        <img src="https://i.imgur.com/AkziNFd.jpg" alt="Flag">
-
-        <!-- Image 3: Grapes -->
-        <img src="https://i.imgur.com/AlxfnKL.jpg" alt="Grapes">
-
-        <!-- Text Content within Header -->
         <h1>Simple Card Trader Game</h1>
     </header>
+
+    <!-- Images Section -->
+    <!-- Image 1: Cheetah -->
+    <img src="https://i.imgur.com/2wsnls2.png" alt="Cheetah">
+    
+    <!-- Image 2: Flag -->
+    <img src="https://i.imgur.com/AkziNFd.jpg" alt="Flag">
+
+    <!-- Image 3: Grapes -->
+    <img src="https://i.imgur.com/AlxfnKL.jpg" alt="Grapes">
 
     <!-- Main Content Section -->
     <main>
