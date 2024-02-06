@@ -27,20 +27,11 @@
         }
 
         header {
-            background-color: #981e32; /* Imperial Red background color */
-            color: #ffffff;
+            position: relative;
             padding: 20px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-
-        /* White shadow-like design */
         header::before {
             content: "";
             position: absolute;
@@ -48,12 +39,29 @@
             left: -10%;
             right: -10%;
             bottom: -10%;
+            background-color: #981e32; /* Imperial Red background color */
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
             background-image: url('cheetah.png'), url('flag.png'), url('grapes.png');
             background-size: 150px, 200px, 150px;
             background-position: center top, right top, left top;
             background-repeat: no-repeat, no-repeat, no-repeat;
-            opacity: 0.1;
+            opacity: 0.4;
             z-index: -1;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #ffffff;
         }
 
         main {
