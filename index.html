@@ -82,9 +82,28 @@
         /* Positioning and sizing for the images */
         img {
             position: absolute;
-            width: 150px; /* Adjusted width */
+            width: 200px; /* Increased width */
             height: auto;
             z-index: -1; /* Ensure images are behind other content */
+        }
+
+        /* Adjusted positioning to make images touch each other */
+        img:nth-child(1) {
+            top: 50%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+        }
+
+        img:nth-child(2) {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        img:nth-child(3) {
+            top: 50%;
+            left: 90%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
@@ -97,13 +116,13 @@
 
     <!-- Images Section -->
     <!-- Image 1: Cheetah -->
-    <img src="https://i.imgur.com/2wsnls2.png" alt="Cheetah" style="top: 10%; left: 10%;">
+    <img src="https://i.imgur.com/2wsnls2.png" alt="Cheetah">
     
     <!-- Image 2: Flag -->
-    <img src="https://i.imgur.com/AkziNFd.jpg" alt="Flag" style="top: 30%; left: 50%;">
+    <img src="https://i.imgur.com/AkziNFd.jpg" alt="Flag">
 
     <!-- Image 3: Grapes -->
-    <img src="https://i.imgur.com/AlxfnKL.jpg" alt="Grapes" style="top: 50%; left: 80%;">
+    <img src="https://i.imgur.com/AlxfnKL.jpg" alt="Grapes">
 
     <!-- Main Content Section -->
     <main>
