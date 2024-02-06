@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complex HTML with Download Button</title>
 
+    <!-- Import the Simple Card Trading Game font -->
+    <link href="https://fonts.googleapis.com/css2?family=Simple+Card+Trading+Game&display=swap" rel="stylesheet">
+
     <!-- External Stylesheets (replace styles.css with your own) -->
     <link rel="stylesheet" href="styles.css">
 
@@ -16,10 +19,11 @@
 
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Simple Card Trading Game', sans-serif; /* Apply the Simple Card Trading Game font */
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            color: #333; /* Set default font color */
         }
 
         header {
@@ -44,17 +48,32 @@
 
         .download-button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 15px 30px; /* Increased padding */
             background-color: #4CAF50;
             color: #ffffff;
             text-decoration: none;
             font-size: 1.2em;
-            border-radius: 5px;
+            border-radius: 10px; /* Increased border radius */
             transition: background-color 0.3s;
         }
 
         .download-button:hover {
             background-color: #45a049;
+        }
+
+        /* Bright font color for the title */
+        .section-title {
+            color: #ff6600;
+        }
+
+        footer {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -62,14 +81,14 @@
 
     <!-- Hero Section -->
     <header>
-        <h1>Complex HTML with Download Button</h1>
+        <h1>Simple Card Trader Game</h1>
     </header>
 
     <!-- Main Content Section -->
     <main>
         <section id="content">
-            <h2>Download Section</h2>
-            <p>This is a complex HTML example with a working "Download" button.</p>
+            <h2 class="section-title">Download Here</h2> <!-- Updated section title -->
+            <p>Click here to start your journey.</p> <!-- Updated text -->
             
             <!-- Download Button -->
             <a href="path/to/your/download/file.zip" class="download-button" download>Download Now</a>
@@ -78,7 +97,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Complex HTML. All rights reserved.</p>
+        <p>&copy; 2024 PLPoyo LLC. All rights reserved.</p>
     </footer>
 
 </body>
