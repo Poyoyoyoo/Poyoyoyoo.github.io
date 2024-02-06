@@ -3,12 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your beautiful website description goes here">
-    <meta name="keywords" content="your, keywords, here">
-    <meta name="author" content="Your Name">
-
-    <!-- Favicon (replace favicon.ico with your own) -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Complex HTML with Download Button</title>
 
     <!-- External Stylesheets (replace styles.css with your own) -->
     <link rel="stylesheet" href="styles.css">
@@ -19,13 +14,8 @@
     <!-- Font Awesome Icons (replace with your preferred icon library) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <!-- Title of your website -->
-    <title>Your Beautiful Website</title>
-
     <style>
         body {
-            background-color: #1a1a1a;
-            color: #ffffff;
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
@@ -34,6 +24,7 @@
 
         header {
             background-color: #333333;
+            color: #ffffff;
             padding: 20px;
             text-align: center;
         }
@@ -41,7 +32,6 @@
         header h1 {
             margin: 0;
             font-size: 2em;
-            color: #ffffff;
         }
 
         main {
@@ -52,14 +42,19 @@
             margin-bottom: 40px;
         }
 
-        footer {
-            background-color: #333333;
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
             color: #ffffff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -67,39 +62,23 @@
 
     <!-- Hero Section -->
     <header>
-        <h1>Your Beautiful Website</h1>
+        <h1>Complex HTML with Download Button</h1>
     </header>
 
     <!-- Main Content Section -->
     <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section of your beautiful website.</p>
-        </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>Discover the beauty behind our incredible journey.</p>
-        </section>
-
-        <section id="services">
-            <h2>Services</h2>
-            <ul>
-                <li>Web Design</li>
-                <li>Mobile App Development</li>
-                <li>SEO Optimization</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Get in touch and let's create something beautiful together.</p>
+        <section id="content">
+            <h2>Download Section</h2>
+            <p>This is a complex HTML example with a working "Download" button.</p>
+            
+            <!-- Download Button -->
+            <a href="path/to/your/download/file.zip" class="download-button" download>Download Now</a>
         </section>
     </main>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Your Beautiful Website. All rights reserved.</p>
+        <p>&copy; 2024 Complex HTML. All rights reserved.</p>
     </footer>
 
 </body>
