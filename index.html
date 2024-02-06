@@ -41,6 +41,7 @@
 
         main {
             padding: 40px;
+            position: relative;
         }
 
         section {
@@ -81,30 +82,74 @@
 
         /* Positioning and sizing for the images */
         img {
-            position: absolute;
             width: 150px; /* Adjusted width */
             height: auto;
+            position: absolute;
             z-index: -1; /* Ensure images are behind other content */
         }
 
         /* Overlapping images */
         img:nth-child(1) {
             top: 50%;
-            left: 10%;
+            left: calc(10% - 75px); /* Adjusted left position */
             transform: translate(-50%, -50%);
             z-index: 1; /* Adjusted z-index */
         }
 
         img:nth-child(2) {
             top: 50%;
-            left: 20%; /* Adjusted left position */
+            left: calc(20% - 75px); /* Adjusted left position */
             transform: translate(-50%, -50%);
             z-index: 2; /* Adjusted z-index */
         }
 
         img:nth-child(3) {
             top: 50%;
-            left: 30%; /* Adjusted left position */
+            left: calc(30% - 75px); /* Adjusted left position */
+            transform: translate(-50%, -50%);
+            z-index: 3; /* Adjusted z-index */
+        }
+
+        /* Second set of images */
+        img:nth-child(4) {
+            top: 50%;
+            left: calc(50% - 75px); /* Adjusted left position */
+            transform: translate(-50%, -50%);
+            z-index: 1; /* Adjusted z-index */
+        }
+
+        img:nth-child(5) {
+            top: 50%;
+            left: calc(60% - 75px); /* Adjusted left position */
+            transform: translate(-50%, -50%);
+            z-index: 2; /* Adjusted z-index */
+        }
+
+        img:nth-child(6) {
+            top: 50%;
+            left: calc(70% - 75px); /* Adjusted left position */
+            transform: translate(-50%, -50%);
+            z-index: 3; /* Adjusted z-index */
+        }
+
+        /* Third set of images */
+        img:nth-child(7) {
+            top: 50%;
+            left: calc(90% - 75px); /* Adjusted left position */
+            transform: translate(-50%, -50%);
+            z-index: 1; /* Adjusted z-index */
+        }
+
+        img:nth-child(8) {
+            top: 50%;
+            left: calc(100% - 75px); /* Adjusted left position */
+            transform: translate(-50%, -50%);
+            z-index: 2; /* Adjusted z-index */
+        }
+
+        img:nth-child(9) {
+            top: 50%;
+            left: calc(110% - 75px); /* Adjusted left position */
             transform: translate(-50%, -50%);
             z-index: 3; /* Adjusted z-index */
         }
@@ -120,11 +165,17 @@
     <!-- Images Section -->
     <!-- Image 1: Cheetah -->
     <img src="https://i.imgur.com/xbGV2DK.png" alt="Cheetah">
+    <img src="https://i.imgur.com/xbGV2DK.png" alt="Cheetah">
+    <img src="https://i.imgur.com/xbGV2DK.png" alt="Cheetah">
     
     <!-- Image 2: Flag -->
     <img src="https://i.imgur.com/URYYep3.png" alt="Flag">
+    <img src="https://i.imgur.com/URYYep3.png" alt="Flag">
+    <img src="https://i.imgur.com/URYYep3.png" alt="Flag">
 
     <!-- Image 3: Grapes -->
+    <img src="https://i.imgur.com/aQCsdDr.png" alt="Grapes">
+    <img src="https://i.imgur.com/aQCsdDr.png" alt="Grapes">
     <img src="https://i.imgur.com/aQCsdDr.png" alt="Grapes">
 
     <!-- Main Content Section -->
