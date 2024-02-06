@@ -27,32 +27,15 @@
         }
 
         header {
+            background-color: #981e32; /* Imperial Red background color */
             color: #ffffff;
             padding: 20px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
         }
 
         header h1 {
             margin: 0;
             font-size: 2em;
-        }
-
-        /* White shadow-like design */
-        header::before {
-            content: "";
-            position: absolute;
-            top: -10%;
-            left: -10%;
-            right: -10%;
-            bottom: -10%;
-            background-image: url('https://i.imgur.com/2wsnls2.png'), url('https://i.imgur.com/AkziNFd.jpg'), url('https://i.imgur.com/AlxfnKL.jpg');
-            background-size: 150px, 200px, 150px;
-            background-position: center top, right top, left top;
-            background-repeat: no-repeat, no-repeat, no-repeat;
-            opacity: 0.1;
-            z-index: -1;
         }
 
         main {
@@ -102,6 +85,18 @@
     <header>
         <h1>Simple Card Trader Game</h1>
     </header>
+
+    <!-- Images Section -->
+    <div>
+        <!-- Image 1: Cheetah -->
+        <img src="https://i.imgur.com/2wsnls2.png" alt="Cheetah" style="display: none;">
+        
+        <!-- Image 2: Flag -->
+        <img src="https://i.imgur.com/AkziNFd.jpg" alt="Flag" style="display: none;">
+
+        <!-- Image 3: Grapes -->
+        <img src="https://i.imgur.com/AlxfnKL.jpg" alt="Grapes" style="display: none;">
+    </div>
 
     <!-- Main Content Section -->
     <main>
